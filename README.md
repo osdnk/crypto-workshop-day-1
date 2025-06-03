@@ -25,13 +25,13 @@ cargo test
 
 ## Running Benchmarks
 
-For simple timing benchmarks already included just run:
+For simple timing benchmarks, already included, just run:
 
 ```sh
 cargo bench
 ```
 
-## TODO (Student Extensions)
+## TODO 
 
 Refer to the top of the source file `main.rs` for a detailed list of 9 open-ended TODOs, each suitable for deeper exploration or a project deliverable, such as:
 
