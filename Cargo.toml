@@ -1,0 +1,20 @@
+[package]
+name = "regev"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "regev"
+
+[dependencies]
+rand = "0.9.1"
+criterion = "0.6.0"
+
+[profile.bench]
+opt-level = 3         # full optimizations (default)
+debug = false         # no debug symbols
+overflow-checks = false
+
+[[bench]]
+name = "bench"
+harness = false
