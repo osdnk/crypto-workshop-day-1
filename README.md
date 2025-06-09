@@ -25,12 +25,12 @@ cargo test
 
 ## Running Benchmarks
 
-For simple timing benchmarks already included just run:
+For simple timing benchmarks, already included, just run:
 
 ```sh
 cargo bench
 ```
 
-## TODO (Student Extensions)
+## TODO 
 
 Refer to the `tasks.md` file for a detailed list of open-ended TODOs.
