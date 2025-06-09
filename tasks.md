@@ -1,4 +1,4 @@
-# 🛠️ Roadmap and Refactoring Tasks for Lattice Crypto Prototype
+# 🛠️ Roadmap and Refactoring Tasks for Regev Encryption Prototype
 
 This document outlines key improvements and refactors to transition the current prototype into a secure, modular, and efficient cryptographic implementation.
 
