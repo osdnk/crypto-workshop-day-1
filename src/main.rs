@@ -6,6 +6,8 @@ use regev::*;
 // Each task is self-contained and can be worked on independently.
 //
 // 1. Replace toy parameters (N, Q, M, etc.) with secure values returned by a lattice estimator.
+//   -> observe that probably you get "stack overflow" as we allocate everything on stack. 
+//    Use heap instead (Vec<u64> instead of [u64; SIZE]) or set "ulimit -s unlimited" (does not scale for long).
 // 2. Switch to ring arithmetic (e.g., use polynomial rings Z_q[X]/(X^n+1)) to enable faster operations (using HEXL, lattirust or hand-crafted NTT or Karatsuba).
 // 3. Replace u64 arithmetic with % Q with better modular arithmetic from a cryptographic library (e.g., ff or arkworks).
 // 4. Use discrete Gaussian sampling for error terms (instead of uniform noise).
@@ -16,11 +18,12 @@ use regev::*;
 // 9. Add comprehensive test suite, including unit tests and property-based tests.
 fn main() {
     let (s, pk) = keygen::keygen();
-    for value in 0..4 {
-        let ct = encrypt::encrypt(&pk, value);
-        let recovered = decrypt::decrypt(&s, &ct);
-        println!("Original: {} | Decrypted: {}", value, recovered);
-    }
+
+    // for value in 0..4 {
+    //     let ct = encrypt::encrypt(&pk, value);
+    //     let recovered = decrypt::decrypt(&s, &ct);
+    //     println!("Original: {} | Decrypted: {}", value, recovered);
+    // }
 }
 
 #[cfg(test)]

@@ -33,16 +33,4 @@ cargo bench
 
 ## TODO (Student Extensions)
 
-Refer to the top of the source file `main.rs` for a detailed list of 9 open-ended TODOs, each suitable for deeper exploration or a project deliverable, such as:
-
-* Replace toy parameters with secure ones
-* Use ring arithmetic
-* Use proper modular arithmetic libraries
-* Add discrete Gaussian noise
-* Implement prover/verifier communication
-* Benchmark timings rigorously
-* Generalise message support
-* Compare with dual-Regev
-* Abstract data structures
-* Write unit and property-based tests
-
+Refer to the `tasks.md` file for a detailed list of open-ended TODOs.
