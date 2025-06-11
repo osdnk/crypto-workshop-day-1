@@ -22,22 +22,22 @@ Stack size adjustments are not scalable; prefer heap allocations for large buffe
 
 ---
 
-## ✅ 3. Integrate Ring Arithmetic for Efficient Polynomial Operations
+## ✅ 3. Use Fast Modular Arithmetic
+**Description:**  
+Replace standard `% Q` operations with optimised modular arithmetic from crypto libraries.
+
+**Options:**
+- [`ff`](https://docs.rs/ff)
+- [`arkworks`](https://github.com/arkworks-rs)
+
+---
+
+## ✅ 4. Integrate Ring Arithmetic for Efficient Polynomial Operations
 **Description:**  
 Use modular polynomial arithmetic over rings like ℤ_q[X]/(Xⁿ+1) to enable fast crypto operations.
 
 **Tools:**  
 Consider HEXL, `lattirust`, hand-crafted NTT, or Karatsuba multiplication.
-
----
-
-## ✅ 4. Use Cryptographically-Secure Modular Arithmetic
-**Description:**  
-Replace standard `% Q` operations with optimized modular arithmetic from crypto libraries.
-
-**Options:**
-- [`ff`](https://docs.rs/ff)
-- [`arkworks`](https://github.com/arkworks-rs)
 
 ---
 
